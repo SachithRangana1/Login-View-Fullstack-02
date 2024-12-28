@@ -1,0 +1,32 @@
+:root{
+    background-color: white;
+}
+.second-wrapper{
+    display: grid;
+    justify-items: center;
+
+    img{
+        opacity: 0.85;
+        width: 750px;
+        height:450px;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    p{
+        width: 70%;
+    }
+
+    .btn-wrapper{
+        margin-bottom: 20px;
+
+        #btn1{
+            margin-right: 10px;
+        }
+    }
+}

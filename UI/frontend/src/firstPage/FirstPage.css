@@ -1,0 +1,23 @@
+:root{
+    background-color: rgb(150, 9, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.first-wrapper{
+
+    color: rgb(165, 163, 163);
+    margin-top: 200px;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        border: 10px solid rgb(97, 1, 97);
+    }
+    
+}
