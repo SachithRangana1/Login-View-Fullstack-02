@@ -1,23 +1,50 @@
-:root{
+.first-page {
     background-color: rgb(150, 9, 150);
-    display: flex;
+    height: 100vh;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
-.first-wrapper{
 
+.first-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
     color: rgb(165, 163, 163);
-    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
 
     h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
-    img{
+    div img{
         height: 200px;
         width: 200px;
         border-radius: 100px;
         border: 10px solid rgb(97, 1, 97);
     }
+
+    .melting-text-container{
+        display: grid;
+        justify-items: center;
+    }
+    #text {
+        font-size: 2.5rem;
+        color: #73f3d3;
+        text-shadow: 0 0 5px #1d1b1c, 0 0 10px #222121, 0 0 20px #4c064e, 0 0 40px #44023f, 0 0 80px #4b023f;
+        animation: glow 1.5s infinite alternate;
+    }
+    
     
 }
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #0e0d0e, 0 0 10px #0e0d0e, 0 0 20px #0e0d0e, 0 0 40px #73f3d3, 0 0 80px #73f3d3;
+    }
+    100% {
+        text-shadow: 0 0 10px #0e0d0e, 0 0 20px #73f3d3, 0 0 40px #0e0d0e, 0 0 80px #73f3d3, 0 0 160px #0e0d0e;
+    }
+}
+  
+
+

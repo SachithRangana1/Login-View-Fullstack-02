@@ -1,0 +1,19 @@
+.user{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.slide{
+    width: 160px;
+    height: 100vh;
+    background-color: blue;
+    padding: 30px ;
+}
+.user .slide img{
+    width: 100px;
+    height: 100px;
+}
+.user .user-info{
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 15px;
+}

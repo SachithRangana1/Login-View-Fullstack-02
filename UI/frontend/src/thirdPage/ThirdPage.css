@@ -1,0 +1,38 @@
+:root{
+    background-color: white;
+}
+.third-wrapper{
+    display: grid;
+    justify-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    img{
+        opacity: 1;
+        width: 550px;
+        height:320px;
+        border-radius: 50px;
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    }
+
+    h3{
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    p{
+        width: 40%;
+        font-size: 13px;
+        color: rgb(56, 53, 53);
+        overflow-x: hidden;
+    }
+
+
+    .btn-wrapper{
+        margin-bottom: 20px;
+
+        #btn1{
+            margin-right: 10px;
+        }
+    }
+}

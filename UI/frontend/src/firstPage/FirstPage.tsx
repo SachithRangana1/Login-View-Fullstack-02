@@ -1,27 +1,32 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import "./FirstPage.css";
 import 'animate.css';
-import SecondPage from '/home/sachith/Documents/Login view (Angular + Java)/UI/ui/src/secondPage/SecondPage.tsx';
+import { useNavigate } from 'react-router-dom';
 
 
 function FirstPage(){
-  const [navigateToSecondPage, setNavigateToSecondPage] = useState(false);
+  // const [navigateToSecondPage, setNavigateToSecondPage] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setNavigateToSecondPage(true);
+      navigate('/second');
     }, 5000); 
     return () => clearTimeout(timer); 
-  }, []);
+  }, [navigate]);
 
-  if (navigateToSecondPage) {
-    return <SecondPage />;
-  }
 
   return (
-    <div className='first-wrapper'>
-        <h1 className='animate__animated animate__fadeInRight animate__delay-1s'>Wara vites</h1>
-        <img  className='animate__animated animate__fadeInRight animate__delay-2s' src="src/assets/logo/premium FLOUR FOODS (1).jpg" alt="logo" />
+    <div className='first-page'>
+      <div className='first-wrapper'>
+
+      <div className="melting-text-container">
+        <h1 className='animate__animated animate__fadeInRight animate__delay-2s' id='text'>Waravita</h1>
+        <h1 className='animate__animated animate__fadeInRight animate__delay-2s' id='text'>Bakery & Cafe</h1>
+        <img className='animate__animated animate__fadeInRight animate__delay-2s' src="src/assets/logo/premium FLOUR FOODS (1).jpg" alt="logo" />
+      </div>
+
+      </div>
     </div>
   );
 };
