@@ -1,34 +1,46 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Ignore Maven target directory
+/target/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
+# Ignore IntelliJ IDEA project files
+/.idea/
+/*.iml
+
+# Ignore Eclipse project files
+/.settings/
+/.classpath
 .project
-.settings
-.springBeans
-.sts4-cache
 
-### IntelliJ IDEA & VSCode ###
-.idea
-.code
-*.iws
-*.iml
-*.ipr
+# Ignore build directories
+/build/
+/out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Ignore Maven wrapper files
+/mvn/wrapper/maven-wrapper.jar
 
-### VS Code ###
-.vscode/
+# Ignore logs
+*.log
+*.log.*
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+*.swp
+
+# Ignore compiled class files
+*.class
+
+# Ignore application-specific files
+*.properties
+*.env
+
+# Ignore Docker-related files
+docker-compose.override.yml
+*.env.local
+
+# Ignore other unnecessary files
+*.bak
+*.old
