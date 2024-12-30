@@ -36,7 +36,15 @@ Before running the application, ensure you have the following installed:
 
 ```bash
 git clone (https://github.com/SachithRangana1/Login-View-Fulstack-02.git)
-cd login-app 
+cd login-app
+```
+#### Open Project with IDE
+```bash
+idea .
+```
+or
+```bash
+code .
 ```
 
 ### 2 Open the backend and frontend codes VSCode
