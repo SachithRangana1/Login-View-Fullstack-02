@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    container_name: 'loginview'
+    environment:
+      - 'MYSQL_DATABASE=loginviewback'
+      - 'MYSQL_PASSWORD=MYSQL'
+      - 'MYSQL_ROOT_PASSWORD=MYSQL'
+    ports:
+      - '3308:3306'
